@@ -1,17 +1,16 @@
 spring:
   profiles:
-    active: dev
+    active: 
+    - dev
 
 --- # 开发环境
 spring:
-  profiles:
-    active: dev
+  profiles: dev
   application:
     name: reader-springcloud-config-dev
 
 --- # 测试环境
 spring:
-  profiles:
-    active: test
+  profiles: test
   application:
     name: reader-springcloud-config-test
