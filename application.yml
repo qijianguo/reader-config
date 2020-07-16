@@ -1,2 +1,15 @@
-server:
-  port: 3344
+spring:
+  profiles:
+    active: dev
+
+--- # 开发环境
+spring:
+  profiles: dev
+  application:
+    name: reader-springcloud-config-dev
+
+--- # 测试环境
+spring:
+  profiles: test
+  application:
+    name: reader-springcloud-config-test
